@@ -11,3 +11,16 @@ The Iris flower data set is a specific set of information compiled by Ronald Fis
 
 Touted as the greatest scientist of his time, Sir Ronald Fisher (1890-1962) was a British statistician and biologist who was known for his contributions to experimental design and population genetics. 
 For his work in statistics, he has been described as "a genius who almost single-handedly created the foundations for modern statistical science" and "the single most important figure in 20th century statistics". In genetics, his work used mathematics to combine Mendelian genetics and natural selection; this contributed to the revival of Darwinism in the early 20th century revision of the theory of evolution known as the modern synthesis. Fisher also did experimental agricultural research, which has saved millions from starvation. [Wikipedia](https://en.wikipedia.org/wiki/Ronald_Fisher)
+
+# FILE ID1.py 
+
+In this script I used the module numpy to calculate the average of each flower's petals and sepals width and length.
+
+## What is Numpy?
+
+Numpy provides functions for dealing with numerical data efficiently in Python. While Python does already provide good mathematical functionality out of the box, numpy is highly efficient at things like multiplying matrices and dealing with huge arrays of data. [Jupyter](https://nbviewer.jupyter.org/github/ianmcloughlin/python-fundamentals-notes/blob/master/functions-modules.ipynb#)
+
+
+REFERENCES:
+1. https://en.wikipedia.org/wiki/Ronald_Fisher
+2.  https://nbviewer.jupyter.org/github/ianmcloughlin/python-fundamentals-notes/blob/master/functions-modules.ipynb
