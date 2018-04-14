@@ -3,19 +3,16 @@
 # Calculating the mean of each column
 
 # imported following modules and functions:
-import numpy
+import numpy as np
 import matplotlib.pyplot as plt
-import pandas
+import pandas as pd
 
 
-#used this function to open iris.data.csv which is saved on my device and separate all values with a coma delimiter
-data = numpy.genfromtxt('iris.data.csv', delimiter=',')
+# I used pandas to load data from this file - iris.data.cs
+data = pd.read_csv('irisdata.csv', header = 0)
 
-#listing all data from the first column of the data set which is the sepal length 
-firstcol = data[:,0]
-
-#listing all the data from the second column of the data set which is the sepal width
-secondcol = data[:, 1]
-
-
+#reset index
+data = data.reset_index()
+data.head()
+print(data)
 
