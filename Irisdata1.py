@@ -13,3 +13,7 @@ data = pd.read_csv('irisdata.csv', header = 0)
 
 print(data)
 
+#calculate mean of sepal length
+
+sepalength = data[:,0]
+meansepalength = numpy.mean(data[:,0])
