@@ -11,8 +11,5 @@ import pandas as pd
 # I used pandas to load data from this file - iris.data.cs
 data = pd.read_csv('irisdata.csv', header = 0)
 
-#reset index
-data = data.reset_index()
-data.head()
 print(data)
 
