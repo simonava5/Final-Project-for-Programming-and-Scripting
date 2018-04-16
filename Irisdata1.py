@@ -21,3 +21,10 @@ data.tail()
 # checking statistical summary of the data set
 data.describe()
 
+# add a histogram to visualise data set
+
+data.hist()
+plt.show()
+
+
+
