@@ -57,6 +57,10 @@ min    |     4.300000   |   2.000000   |   1.000000   |   0.100000
 75%    |     6.400000  |    3.300000   |    5.100000  |    1.800000
 max    |     7.900000  |    4.400000   |    6.900000  |    2.500000
 
+An overall view at the data set using a histogram:
+
+![Figure 1. Distribution of input attribute](Final-Project-for-Programming-and-Scripting/Figure 1. Distribution of input attributes.png)
+
 
 
 
