@@ -20,6 +20,10 @@ In this script I used the module numpy to calculate the average of each flower's
 
 Numpy provides functions for dealing with numerical data efficiently in Python. While Python does already provide good mathematical functionality out of the box, numpy is highly efficient at things like multiplying matrices and dealing with huge arrays of data. [Jupyter](https://nbviewer.jupyter.org/github/ianmcloughlin/python-fundamentals-notes/blob/master/functions-modules.ipynb#)
 
+## What is Pandas?
+
+Pandas is an open source, BSD-licensed library providing high-performance, easy-to-use data structures and data analysis tools for the Python programming language. [Pandas](https://pandas.pydata.org/)
+
 
 REFERENCES:
 1. https://en.wikipedia.org/wiki/Ronald_Fisher
