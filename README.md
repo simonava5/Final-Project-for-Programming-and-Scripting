@@ -59,7 +59,7 @@ max    |     7.900000  |    4.400000   |    6.900000  |    2.500000
 
 An overall view at the data set using a histogram:
 
-![Figure 1. Distribution of input attribute](Final-Project-for-Programming-and-Scripting/Figure 1. Distribution of input attributes.png)
+![Figure 1. Distribution of input attribute](https://github.com/simonava5/Final-Project-for-Programming-and-Scripting/blob/master/Figure%201.%20Distribution%20of%20input%20attributes.png)
 
 
 
