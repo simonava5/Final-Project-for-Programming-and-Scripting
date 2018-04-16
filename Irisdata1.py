@@ -11,9 +11,13 @@ import pandas as pd
 # I used pandas to load data from this file - iris.data.cs
 data = pd.read_csv('irisdata.csv', header = 0)
 
-print(data)
+# quick analysis of the data
+# checking first 10 rows of the data
+data.head()
 
-#calculate mean of sepal length
+# checking last 10 rows of the data
+data.tail()
 
-sepalength = data[:,0]
-meansepalength = numpy.mean(data[:,0])
+# checking statistical summary of the data set
+data.describe()
+
