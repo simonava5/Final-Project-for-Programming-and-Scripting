@@ -1,6 +1,8 @@
 # Final-Project-for-Programming-and-Scripting
 Final Project 2018 for Programming and Scripting module researching and analysing Fisher’s Iris data set.
 
+# 1. RESEARCH
+
 ## What is Iris Flower Data Set?
 
 The Iris flower data set is a specific set of information compiled by Ronald Fisher, a biologist, in the 1930s. It describes particular biological characteristics of various types of Iris flowers, specifically, the length and width of both pedals and the sepals, which are part of the flower’s reproductive system. [Techopedia](https://www.techopedia.com/definition/32880/iris-flower-data-set)
@@ -33,7 +35,7 @@ Numpy provides functions for dealing with numerical data efficiently in Python. 
 
 Pandas is an open source, BSD-licensed library providing high-performance, easy-to-use data structures and data analysis tools for the Python programming language. [Pandas](https://pandas.pydata.org/)
 
-## Analysis
+# ANALYSIS
 
 In this analysis of the Iris Data Set, I will be looking at 3 species - Iris Setosa, Iris Virginica, Iris Versicolor and their four variables in cm. These are as follows:
 
