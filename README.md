@@ -27,7 +27,7 @@ For his work in statistics, he has been described as "a genius who almost single
 
 In order to successfully run this code you first must install the following software:
 
-1. [(Python](https://www.python.org/downloads/) via Anaconda3
+1. [Python](https://www.python.org/downloads/) via Anaconda3
 2. [Visual Studio Code](https://code.visualstudio.com/)
 
 Also import the following software libraries in visual code where you are going to run this code: 
@@ -47,20 +47,22 @@ Numpy provides functions for dealing with numerical data efficiently in Python. 
 
 Pandas is an open source, BSD-licensed library providing high-performance, easy-to-use data structures and data analysis tools for the Python programming language. [Pandas](https://pandas.pydata.org/)
 
-# ANALYSIS
+# 2. ANALYSIS
 
 In this analysis of the Iris Data Set, I will be looking at 3 species - Iris Setosa, Iris Virginica, Iris Versicolor and their four variables in cm. These are as follows:
 
-1. Sepal Lenght
-2. Sepal Width
-3. Petal Length
-4. Petal Width
+* Sepal Lenght
+* Sepal Width
+* Petal Length
+* Petal Width
 
 Using pandas software library, open file irisdata.csv.
 
-To check that the data 
+**Line 19 and 22**
+Before diving deep into this data set, I quickly pulled up first and last 10 rows of the data to check that everything is looking correct.
 
-
+`data.head(10)`
+`data.tail(10)`
 
 First 5 rows of the data set:
 
@@ -82,6 +84,12 @@ sepal_length | sepal_width | petal_length | petal_width  |  species
 6.2       |   3.4       |   5.4       |  2.3 |  virginica
 5.9       |  3.0        |  5.1        |  1.8 |  virginica
 
+**Line 25**
+
+For a summary of the data set including the count, mean, standard deviation and percentiles of each column, I used following code:
+
+`data.describe()`
+
 Short statistical summary of Iris Data Set:
 
 Description | sepal_length |    sepal_width |   petal_length |  petal_width
@@ -95,7 +103,12 @@ min    |     4.300000   |   2.000000   |   1.000000   |   0.100000
 75%    |     6.400000  |    3.300000   |    5.100000  |    1.800000
 max    |     7.900000  |    4.400000   |    6.900000  |    2.500000
 
-An overall view at the data set using a histogram:
+**Line 29-30**
+
+I used this code to get overall view at the data set using a histogram.
+
+`data.hist()`
+`plt.show`
 
 ![Figure 1. Distribution of input attribute](https://github.com/simonava5/Final-Project-for-Programming-and-Scripting/blob/master/Figure%201.%20Distribution%20of%20input%20attributes.png)
 
