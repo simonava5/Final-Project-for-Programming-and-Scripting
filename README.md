@@ -3,14 +3,12 @@ Final Project 2018 for Programming and Scripting module researching and analysin
 
 Project Objectives:
 
-[] 1. Research background information about the data set and write a summary about
-it.
-[] 2. Keep a list of references you used in completing the project.
-[] 3. Download the data set and write some Python code to investigate it.
-[] 4. Summarise the data set by, for example, calculating the maximum, minimum and
-mean of each column of the data set. A Python script will quickly do this for you.
-[] 5. Write a summary of your investigations.
-[] 6. Include supporting tables and graphics as you deem necessary.
+[ ] 1. Research background information about the data set and write a summary about it.
+[ ] 2. Keep a list of references you used in completing the project.
+[ ] 3. Download the data set and write some Python code to investigate it.
+[ ] 4. Summarise the data set by, for example, calculating the maximum, minimum and mean of each column of the data set. A Python script will quickly do this for you.
+[ ] 5. Write a summary of your investigations.
+[ ] 6. Include supporting tables and graphics as you deem necessary.
 
 # 1. RESEARCH
 
@@ -29,14 +27,17 @@ For his work in statistics, he has been described as "a genius who almost single
 
 In order to successfully run this code you first must install the following software:
 
-1. (Python)[https://www.python.org/downloads/] via Anaconda3
-2. (Visual Studio Code)[https://code.visualstudio.com/]
+1. [(Python](https://www.python.org/downloads/) via Anaconda3
+2. [Visual Studio Code](https://code.visualstudio.com/)
 
 Also import the following software libraries in visual code where you are going to run this code: 
 
 1. Numpy [import *numpy* as *np*]
-2. Pandas [mport *pandas* as *pd*]
+2. Pandas [import *pandas* as *pd*]
 3. Matplotlib [import *matplotlib.pyplot* as *plt*]
+
+Lastly, save the data set from this [link](https://archive.ics.uci.edu/ml/machine-learning-databases/iris/iris.data)
+ or use it from my GitHub account [here](https://github.com/simonava5/Final-Project-for-Programming-and-Scripting/blob/master/irisdata.csv), click raw to copy and save it on your device. 
 
 ### What is Numpy?
 
@@ -56,6 +57,8 @@ In this analysis of the Iris Data Set, I will be looking at 3 species - Iris Set
 4. Petal Width
 
 Using pandas software library, open file irisdata.csv.
+
+To check that the data 
 
 
 
