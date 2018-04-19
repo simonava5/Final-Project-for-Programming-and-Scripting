@@ -29,5 +29,13 @@ data.describe()
 data.hist()
 plt.show()
 
+# using subplots, add a histogram of each variable on a different axis
+
+data.plot(subplots=True, figsize=(6, 6))
+plt.show()
+
+
+
+
 
 

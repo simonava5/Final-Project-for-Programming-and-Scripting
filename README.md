@@ -125,6 +125,17 @@ min    |     4.300000   |   2.000000   |   1.000000   |   0.100000
 75%    |     6.400000  |    3.300000   |    5.100000  |    1.800000
 max    |     7.900000  |    4.400000   |    6.900000  |    2.500000
 
+**Line 34-35**
+
+Using subplots, compare each variable on a different axis with following:
+
+`data.plot(subplots=True, figsize=(6, 6))
+plt.show()`
+
+![Figure 2. Showing variables on different axis](https://github.com/simonava5/Final-Project-for-Programming-and-Scripting/blob/master/Figure%202.%20Differences%20between%20each%20variable.png)
+
+
+
 
 
 
@@ -132,3 +143,4 @@ max    |     7.900000  |    4.400000   |    6.900000  |    2.500000
 1. https://en.wikipedia.org/wiki/Ronald_Fisher
 2.  https://nbviewer.jupyter.org/github/ianmcloughlin/python-fundamentals-notes/blob/master/functions-modules.ipynb
 3. https://archive.ics.uci.edu/ml/datasets/Iris)
+4. https://pandas.pydata.org/pandas-docs/stable/visualization.html#visualization-scatter-matrix
