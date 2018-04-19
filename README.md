@@ -1,4 +1,4 @@
-# Final-Project-for-Programming-and-Scripting
+# Final Project for Programming and Scripting 2018
 Final Project 2018 for Programming and Scripting module researching and analysing Fisher’s Iris data set.
 
 # 1. RESEARCH
