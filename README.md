@@ -134,6 +134,17 @@ plt.show()`
 
 ![Figure 2. Showing variables on different axis](https://github.com/simonava5/Final-Project-for-Programming-and-Scripting/blob/master/Figure%202.%20Differences%20between%20each%20variable.png)
 
+**Line 40**
+
+I wanted to show the density of each attribute, but I'm not sure if the pie chart represents this data well. 
+
+`series = pd.Series(3 * np.random.rand(4), index=['sepal_length', 'sepal_width', 'petal_length', 'petal_width'])`
+`series.plot.pie(figsize=(6, 6))`
+`plt.show()`
+
+![Density](https://github.com/simonava5/Final-Project-for-Programming-and-Scripting/blob/master/Figure_1-1.png)
+
+
 
 
 
