@@ -34,6 +34,20 @@ plt.show()
 data.plot(subplots=True, figsize=(6, 6))
 plt.show()
 
+# I wanted to use diagrams that make sense for this data analysis and this pie chart
+# incidates the density of each variable.
+
+series = pd.Series(3 * np.random.rand(4), index=['sepal_length', 'sepal_width', 'petal_length', 'petal_width'])
+series.plot.pie(figsize=(6, 6))
+plt.show()
+
+
+
+data.plot(kind='box', subplots=True, layout=(2,2), sharex=False, sharey=False)
+plt.show()
+
+
+
 
 
 
