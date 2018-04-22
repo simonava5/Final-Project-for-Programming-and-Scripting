@@ -131,7 +131,23 @@ I wanted to show the density of each attribute, but I'm not sure if the pie char
 
 ![Density](https://github.com/simonava5/Final-Project-for-Programming-and-Scripting/blob/master/Figure_1-1.png)
 
+**Line 44**
 
+To show the difference between each species attributes I sliced the values into three groups and produced box and whisker plots.
+
+`data = setosa[0:49]`
+`data = versicolor[50:99]`
+`data = virginica[100:149]`
+
+`setosa.plot(kind='box', subplots=True, layout=(2,2), sharex=False, sharey=False)
+
+versicolor.plot(kind='box', subplots=True, layout=(2,2), sharex=False, sharey=False)
+
+virginica.plot(kind='box', subplots=True, layout=(2,2), sharex=False, sharey=False)`
+
+![Iris Setosa](https://github.com/simonava5/Final-Project-for-Programming-and-Scripting/blob/master/setosa.png)
+![Iris Versicolor](https://github.com/simonava5/Final-Project-for-Programming-and-Scripting/blob/master/versicolor.png)
+![Iris Virginica](https://github.com/simonava5/Final-Project-for-Programming-and-Scripting/blob/master/virginica.png)
 
 
 

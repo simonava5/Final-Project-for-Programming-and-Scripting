@@ -41,10 +41,19 @@ series = pd.Series(3 * np.random.rand(4), index=['sepal_length', 'sepal_width', 
 series.plot.pie(figsize=(6, 6))
 plt.show()
 
+# Separate each species values and compare each attribute
+
+data = setosa[0:49]
+data = versicolor[50:99]
+data = virginica[100:149]
+
+# to show the difference in each species attributes I used a box and whisker plots
+
+setosa.plot(kind='box', subplots=True, layout=(2,2), sharex=False, sharey=False)
+versicolor.plot(kind='box', subplots=True, layout=(2,2), sharex=False, sharey=False)
+virginica.plot(kind='box', subplots=True, layout=(2,2), sharex=False, sharey=False)
 
 
-data.plot(kind='box', subplots=True, layout=(2,2), sharex=False, sharey=False)
-plt.show()
 
 
 
