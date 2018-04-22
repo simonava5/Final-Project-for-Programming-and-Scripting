@@ -145,14 +145,9 @@ To show the difference between each species attributes I sliced the values into 
 
 `virginica.plot(kind='box', subplots=True, layout=(2,2), sharex=False, sharey=False)`
 
-Figure 3. Iris Setosa
-
 ![Iris Setosa](https://github.com/simonava5/Final-Project-for-Programming-and-Scripting/blob/master/setosa.png)
 
-Figure 4. Iris Versicolor
 ![Iris Versicolor](https://github.com/simonava5/Final-Project-for-Programming-and-Scripting/blob/master/versicolor.png)
-
-Figure 5. Iris Virginica
 
 ![Iris Virginica](https://github.com/simonava5/Final-Project-for-Programming-and-Scripting/blob/master/virginica.png)
 
