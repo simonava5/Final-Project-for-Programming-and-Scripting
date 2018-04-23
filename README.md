@@ -147,9 +147,8 @@ I used this code to get an overall view at the data set using a histogram.
 
 Using subplots, I compared each variable on a different axis with the following code:
 
-```data.plot(subplots=True, figsize=(6, 6))
-plt.show()
-```
+`data.plot(subplots=True, figsize=(6, 6))
+plt.show()`
 
 ![Figure 2. Showing variables on different axis](https://github.com/simonava5/Final-Project-for-Programming-and-Scripting/blob/master/Figure%202.%20Differences%20between%20each%20variable.png)
 
@@ -171,16 +170,15 @@ To show the difference between each species attributes I sliced the values into 
 
  **DIAGRAM 2.**
 
-`data = setosa[0:49]`
-`data = versicolor[50:99]`
-`data = virginica[100:149]`
+`setosa = data[0:49]`
+`versicolor = data[50:99]`
+`virginica = data[100:149]`
 
-```setosa.plot(kind='box', subplots=True, layout=(2,2), sharex=False, sharey=False)
+`setosa.plot(kind='box', subplots=True, layout=(2,2), sharex=False, sharey=False)`
 
-versicolor.plot(kind='box', subplots=True, layout=(2,2), sharex=False, sharey=False)
+`versicolor.plot(kind='box', subplots=True, layout=(2,2), sharex=False, sharey=False)`
 
-virginica.plot(kind='box', subplots=True, layout=(2,2), sharex=False, sharey=False)
-```
+`virginica.plot(kind='box', subplots=True, layout=(2,2), sharex=False, sharey=False)`
 
 ![Iris Setosa](https://github.com/simonava5/Final-Project-for-Programming-and-Scripting/blob/master/setosa.png)
 
@@ -192,17 +190,15 @@ This diagram provides us with a clear visualization of each species variables. T
 
 # 3. CONCLUSION
 
-We can see from Table 3 that the average length and width of a sepal is 5.8 and 3.05,
-and the average length and width of a petal is 3.75 and 1.19 indicating that a petal of the Iris spieces is smaller in size than the sepal.
+I found it extremely useful to get a general idea about the data to be analyzed using simple Python functions such as describe(). It provided me with some basic information which gave me a greater understanding of what I've to work with.
 
-We can clearly see by Diagram 1 that petal length and width are the smallest from 0-50 and increase in size again from 50-100 and again from 100-150. As we already know from our data that rows 0-50 represent Iris Setosa, 50-100 - Iris Versicolor and 100-150 Iris Virginica, so it is undeniable that Iris Setosa have the smallest petals and Iris Virginica have the largest. 
+We can see from Table 3 that the average length and width of a sepal is 5.8 and 3.05, and the average length and width of a petal is 3.75 and 1.19 indicating that a petal of the Iris spieces is smaller in size than the sepal.
+
+We can clearly see from Diagram 1 that petal length and width are the smallest from 0-50 and increase in size again from 50-100 and again from 100-150. As we already know from our data that rows 0-50 represent Iris Setosa, 50-100 - Iris Versicolor and 100-150 Iris Virginica, so it is undeniable that Iris Setosa have the smallest petals and Iris Virginica have the largest. 
 
 Diagram 2. provides us with a clear visualization of each species variables. The biggest difference can be seen between Iris Setosa and Iris Virginica, and Iris Versicolor falls somewhere in the middle.
 
-There are a lot of ways to reach goals: you can get a basic description of the data, visualize it, identify patterns in it, identify challenges of using the data, etc.
-
-relationships between features will become more clear.
-
+Over all, visualisating the data using Matplotlib gave me a great insight of how data can be represented. It clearly demonstarted the different patterns and relationships between the variables. It gives data a totally different dynamic. 
 
 
 ### REFERENCES:
