@@ -71,6 +71,8 @@ In this analysis of the Iris Data Set, I will be looking at 3 species - Iris Set
 * Petal Length
 * Petal Width
 
+![Iris Flower](https://github.com/simonava5/Final-Project-for-Programming-and-Scripting/blob/master/Iris%20flower%20petal%20and%20sepal.jpg)
+
 **Line 19 and 22**
 
 Before diving deep into this data set, I quickly pulled up first and last 5 rows of the data to check that everything looks correct and that it matches the csv file I uploaded with the Iris Data Set.
