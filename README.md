@@ -3,12 +3,12 @@ Final Project 2018 for Programming and Scripting module researching and analysin
 
 Project Objectives:
 
-- [ ] 1. Research background information about the data set and write a summary about it.
-- [ ] 2. Keep a list of references you used in completing the project.
-- [ ] 3. Download the data set and write some Python code to investigate it.
+- [x] 1. Research background information about the data set and write a summary about it.
+- [x] 2. Keep a list of references you used in completing the project.
+- [x] 3. Download the data set and write some Python code to investigate it.
 - [ ] 4. Summarise the data set by, for example, calculating the maximum, minimum and mean of each column of the data set. A Python script will quickly do this for you.
 - [ ] 5. Write a summary of your investigations.
-- [ ] 6. Include supporting tables and graphics as you deem necessary.
+- [x] 6. Include supporting tables and graphics as you deem necessary.
 
 # 1. RESEARCH
 
