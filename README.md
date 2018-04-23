@@ -71,10 +71,6 @@ In this analysis of the Iris Data Set, I will be looking at 3 species - Iris Set
 * Petal Length
 * Petal Width
 
-Using pandas software library, open file irisdata.csv.
-
-You can find the code I created to analyse this dataset in **Irisdata1.py** file.
-
 **Line 19 and 22**
 
 Before diving deep into this data set, I quickly pulled up first and last 5 rows of the data to check that everything looks correct and that it matches the csv file I uploaded with the Iris Data Set.
@@ -137,7 +133,7 @@ and the average length and width of a petal is 3.75 and 1.19 indicating that a p
 I used this code to get an overall view at the data set using a histogram.
 
 ```data.hist()```
-```plt.show```
+```plt.show()```
 
  **HISTOGRAM 1.**
 
@@ -145,12 +141,12 @@ I used this code to get an overall view at the data set using a histogram.
 
 **Line 34-35**
 
- **DIAGRAM 1**
+ **DIAGRAM 1.**
 
 Using subplots, I compared each variable on a different axis with the following code:
 
-```data.plot(subplots=True, figsize=(6, 6))
-plt.show()```
+``data.plot(subplots=True, figsize=(6, 6))
+plt.show()``
 
 ![Figure 2. Showing variables on different axis](https://github.com/simonava5/Final-Project-for-Programming-and-Scripting/blob/master/Figure%202.%20Differences%20between%20each%20variable.png)
 
