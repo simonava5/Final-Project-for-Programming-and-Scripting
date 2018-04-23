@@ -145,8 +145,9 @@ I used this code to get an overall view at the data set using a histogram.
 
 Using subplots, I compared each variable on a different axis with the following code:
 
-``data.plot(subplots=True, figsize=(6, 6))
-plt.show()``
+```data.plot(subplots=True, figsize=(6, 6))
+plt.show()
+```
 
 ![Figure 2. Showing variables on different axis](https://github.com/simonava5/Final-Project-for-Programming-and-Scripting/blob/master/Figure%202.%20Differences%20between%20each%20variable.png)
 
@@ -166,15 +167,18 @@ I wanted to show the density of each attribute, but I'm not sure if the pie char
 
 To show the difference between each species attributes I sliced the values into three groups and produced box and whisker plots.
 
+ **DIAGRAM 2.**
+
 `data = setosa[0:49]`
 `data = versicolor[50:99]`
 `data = virginica[100:149]`
 
-`setosa.plot(kind='box', subplots=True, layout=(2,2), sharex=False, sharey=False)`
+```setosa.plot(kind='box', subplots=True, layout=(2,2), sharex=False, sharey=False)
 
-`versicolor.plot(kind='box', subplots=True, layout=(2,2), sharex=False, sharey=False)`
+versicolor.plot(kind='box', subplots=True, layout=(2,2), sharex=False, sharey=False)
 
-`virginica.plot(kind='box', subplots=True, layout=(2,2), sharex=False, sharey=False)`
+virginica.plot(kind='box', subplots=True, layout=(2,2), sharex=False, sharey=False)
+```
 
 ![Iris Setosa](https://github.com/simonava5/Final-Project-for-Programming-and-Scripting/blob/master/setosa.png)
 
@@ -182,12 +186,16 @@ To show the difference between each species attributes I sliced the values into 
 
 ![Iris Virginica](https://github.com/simonava5/Final-Project-for-Programming-and-Scripting/blob/master/virginica.png)
 
+This diagram provides us with a clear visualization of each species variables. The biggest difference can be seen between Iris Setosa and Iris Virginica, and Iris Versicolor falls somewhere in the middle.
+
 # 3. CONCLUSION
 
 We can see from Table 3 that the average length and width of a sepal is 5.8 and 3.05,
 and the average length and width of a petal is 3.75 and 1.19 indicating that a petal of the Iris spieces is smaller in size than the sepal.
 
 We can clearly see by Diagram 1 that petal length and width are the smallest from 0-50 and increase in size again from 50-100 and again from 100-150. As we already know from our data that rows 0-50 represent Iris Setosa, 50-100 - Iris Versicolor and 100-150 Iris Virginica, so it is undeniable that Iris Setosa have the smallest petals and Iris Virginica have the largest. 
+
+Diagram 2. provides us with a clear visualization of each species variables. The biggest difference can be seen between Iris Setosa and Iris Virginica, and Iris Versicolor falls somewhere in the middle.
 
 
 
