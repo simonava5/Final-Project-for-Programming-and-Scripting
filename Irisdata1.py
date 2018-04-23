@@ -12,16 +12,14 @@ import pandas as pd
 # I used pandas to load data from this file - iris.data.cs
 data = pd.read_csv('irisdata.csv', header = 0)
 
-# Before analysing the data set, I 
-
 # quick analysis of the data
-# checking first 10 rows of the data
-data.head(10)
+# checking first 5 rows of the data
+data.head(5)
 
-# checking last 10 rows of the data
-data.tail(10)
+# check last 5 rows of the data
+data.tail(5)
 
-# checking statistical summary of the data set
+# check statistical summary of the data set
 data.describe()
 
 # add a histogram to visualise data set

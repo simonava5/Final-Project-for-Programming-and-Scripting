@@ -75,7 +75,7 @@ In this analysis of the Iris Data Set, I will be looking at 3 species - Iris Set
 
 **Line 19 and 22**
 
-Before diving deep into this data set, I quickly pulled up first and last 5 rows of the data to check that everything looks correct and that it matches the csv file I uploaded with the Iris Data Set.
+Before diving deep into this data set, I quickly pulled up first and last 5 rows of the data to check that everything looks correct and that it matches the csv file I imported with the Iris Data Set.
 
 ```data.head(5)```
 
@@ -107,7 +107,7 @@ sepal_length | sepal_width | petal_length | petal_width  |  species
 
 **Line 25**
 
-For a summary of the data set including the count, mean, standard deviation and percentiles of each column, I used following code:
+For a statistical summary of the data set including the count, mean, standard deviation and percentiles of each column, I used following code:
 
 ```data.describe()```
 
@@ -198,6 +198,10 @@ and the average length and width of a petal is 3.75 and 1.19 indicating that a p
 We can clearly see by Diagram 1 that petal length and width are the smallest from 0-50 and increase in size again from 50-100 and again from 100-150. As we already know from our data that rows 0-50 represent Iris Setosa, 50-100 - Iris Versicolor and 100-150 Iris Virginica, so it is undeniable that Iris Setosa have the smallest petals and Iris Virginica have the largest. 
 
 Diagram 2. provides us with a clear visualization of each species variables. The biggest difference can be seen between Iris Setosa and Iris Virginica, and Iris Versicolor falls somewhere in the middle.
+
+There are a lot of ways to reach goals: you can get a basic description of the data, visualize it, identify patterns in it, identify challenges of using the data, etc.
+
+relationships between features will become more clear.
 
 
 
