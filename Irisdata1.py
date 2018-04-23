@@ -41,9 +41,9 @@ plt.show()
 
 # Separate each species values and compare each attribute
 
-data = setosa[0:49]
-data = versicolor[50:99]
-data = virginica[100:149]
+setosa = data[0:49]
+versicolor = data[50:99]
+virginica = data[100:149]
 
 # to show the difference in each species attributes I used a box and whisker plots
 
