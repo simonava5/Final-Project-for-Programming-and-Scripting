@@ -47,6 +47,11 @@ Numpy provides functions for dealing with numerical data efficiently in Python. 
 
 Pandas is an open source, BSD-licensed library providing high-performance, easy-to-use data structures and data analysis tools for the Python programming language. [Pandas](https://pandas.pydata.org/)
 
+### What is Matplot?
+
+Matplotlib is a plotting library for the Python programming language and its numerical mathematics extension NumPy.
+Matplotlib is a Python 2D plotting library which produces publication quality figures in a variety of hardcopy formats and interactive environments across platforms. Matplotlib can be used in Python scripts, the Python and IPython shells, the Jupyter notebook, web application servers, and four graphical user interface toolkits.[Matplotlib](https://matplotlib.org/)
+
 # 2. ANALYSIS
 
 In this analysis of the Iris Data Set, I will be looking at 3 species - Iris Setosa, Iris Virginica, Iris Versicolor and their four variables in cm. These are as follows:
@@ -58,13 +63,16 @@ In this analysis of the Iris Data Set, I will be looking at 3 species - Iris Set
 
 Using pandas software library, open file irisdata.csv.
 
+You can find the code I created to analyse this dataset in **Irisdata1.py** file.
+
 **Line 19 and 22**
-Before diving deep into this data set, I quickly pulled up first and last 10 rows of the data to check that everything is looking correct.
+Before diving deep into this data set, I quickly pulled up first and last 5 rows of the data to check that everything looks correct and that it matches the csv file I uploaded with the Iris Data Set.
 
-`data.head(10)`
-`data.tail(10)`
+`data.head(5)`
 
-First 5 rows of the data set:
+First 5 rows of the data set:`
+
+TABLE 1. 
 
 sepal_length |  sepal_width | petal_length | petal_width |species
 ------------ | ------------ | ------------ | ----------- |-------
@@ -74,7 +82,11 @@ sepal_length |  sepal_width | petal_length | petal_width |species
  4.6      |    3.1         |  1.5       |   0.2  | setosa
 5.0      |    3.6         |  1.4      |    0.2 | setosa
 
+`data.tail(5)`
+
 Last 5 rows of the data set:
+
+TABLE 2. 
 
 sepal_length | sepal_width | petal_length | petal_width  |  species
 ------------ | ----------- | ------------ | ------------ | ---------
@@ -88,9 +100,11 @@ sepal_length | sepal_width | petal_length | petal_width  |  species
 
 For a summary of the data set including the count, mean, standard deviation and percentiles of each column, I used following code:
 
-`data.describe()`
+```data.describe()```
 
 Short statistical summary of Iris Data Set:
+
+TABLE 3.
 
 Description | sepal_length |    sepal_width |   petal_length |  petal_width
 ----------- |  ----------- |  ------------- |  ------------- |  -----------
@@ -103,12 +117,16 @@ min    |     4.300000   |   2.000000   |   1.000000   |   0.100000
 75%    |     6.400000  |    3.300000   |    5.100000  |    1.800000
 max    |     7.900000  |    4.400000   |    6.900000  |    2.500000
 
+
+We can see from this table that the average length and width of a sepal is 5.8 and 3.05
+and the average length and width of a petal is 3.75 and 1.19 indicating that a petal of the Iris spieces is smaller in size than the sepal.
+
 **Line 29-30**
 
 I used this code to get overall view at the data set using a histogram.
 
-`data.hist()`
-`plt.show`
+```data.hist()```
+```plt.show```
 
 ![Figure 1. Distribution of input attribute](https://github.com/simonava5/Final-Project-for-Programming-and-Scripting/blob/master/Figure%201.%20Distribution%20of%20input%20attributes.png)
 
@@ -150,6 +168,11 @@ To show the difference between each species attributes I sliced the values into 
 ![Iris Versicolor](https://github.com/simonava5/Final-Project-for-Programming-and-Scripting/blob/master/versicolor.png)
 
 ![Iris Virginica](https://github.com/simonava5/Final-Project-for-Programming-and-Scripting/blob/master/virginica.png)
+
+# 3. CONCLUSION
+
+We can see from table 3 that the average length and width of a sepal is 5.8 and 3.05,
+and the average length and width of a petal is 3.75 and 1.19 indicating that a petal of the Iris spieces is smaller in size than the sepal.
 
 
 
