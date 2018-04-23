@@ -36,21 +36,31 @@ Also import the following software libraries in visual code where you are going 
 2. Pandas [import *pandas* as *pd*]
 3. Matplotlib [import *matplotlib.pyplot* as *plt*]
 
-Lastly, save the data set from this [link](https://archive.ics.uci.edu/ml/machine-learning-databases/iris/iris.data)
- or use it from my GitHub account [here](https://github.com/simonava5/Final-Project-for-Programming-and-Scripting/blob/master/irisdata.csv), click raw to copy and save it on your device. 
+Save the data set from this [link](https://archive.ics.uci.edu/ml/machine-learning-databases/iris/iris.data)
+or use it from my GitHub account [here](https://github.com/simonava5/Final-Project-for-Programming-and-Scripting/blob/master/irisdata.csv), click raw to copy and save it on your device. 
+
+You can find the code I created to analyse this dataset in **Irisdata1.py** file.
+
+Using pandas software library, open file irisdata.csv.
+
+```Data = pd.read_csv('irisdata.csv', header = 0)```
+
+-----------------------------------------------------------------------------------------------------------------------
+
+About the libraries that I will be using:
 
 ### What is Numpy?
 
-Numpy provides functions for dealing with numerical data efficiently in Python. While Python does already provide good mathematical functionality out of the box, numpy is highly efficient at things like multiplying matrices and dealing with huge arrays of data. [Jupyter](https://nbviewer.jupyter.org/github/ianmcloughlin/python-fundamentals-notes/blob/master/functions-modules.ipynb#)
+Numpy provides functions for dealing with numerical data efficiently in Python. While Python does already provide good mathematical functionality out of the box, numpy is highly efficient at things like multiplying matrices and dealing with huge arrays of data. [2]
 
 ### What is Pandas?
 
-Pandas is an open source, BSD-licensed library providing high-performance, easy-to-use data structures and data analysis tools for the Python programming language. [Pandas](https://pandas.pydata.org/)
+Pandas is an open source, BSD-licensed library providing high-performance, easy-to-use data structures and data analysis tools for the Python programming language. [3]
 
 ### What is Matplot?
 
 Matplotlib is a plotting library for the Python programming language and its numerical mathematics extension NumPy.
-Matplotlib is a Python 2D plotting library which produces publication quality figures in a variety of hardcopy formats and interactive environments across platforms. Matplotlib can be used in Python scripts, the Python and IPython shells, the Jupyter notebook, web application servers, and four graphical user interface toolkits.[Matplotlib](https://matplotlib.org/)
+Matplotlib is a Python 2D plotting library which produces publication quality figures in a variety of hardcopy formats and interactive environments across platforms. Matplotlib can be used in Python scripts, the Python and IPython shells, the Jupyter notebook, web application servers, and four graphical user interface toolkits.[4]
 
 # 2. ANALYSIS
 
@@ -66,13 +76,14 @@ Using pandas software library, open file irisdata.csv.
 You can find the code I created to analyse this dataset in **Irisdata1.py** file.
 
 **Line 19 and 22**
+
 Before diving deep into this data set, I quickly pulled up first and last 5 rows of the data to check that everything looks correct and that it matches the csv file I uploaded with the Iris Data Set.
 
-`data.head(5)`
+```data.head(5)```
 
-First 5 rows of the data set:`
+First 5 rows of the data set:
 
-TABLE 1. 
+ **TABLE 1.**
 
 sepal_length |  sepal_width | petal_length | petal_width |species
 ------------ | ------------ | ------------ | ----------- |-------
@@ -82,11 +93,11 @@ sepal_length |  sepal_width | petal_length | petal_width |species
  4.6      |    3.1         |  1.5       |   0.2  | setosa
 5.0      |    3.6         |  1.4      |    0.2 | setosa
 
-`data.tail(5)`
+```data.tail(5)```
 
 Last 5 rows of the data set:
 
-TABLE 2. 
+ **TABLE 2.**
 
 sepal_length | sepal_width | petal_length | petal_width  |  species
 ------------ | ----------- | ------------ | ------------ | ---------
@@ -104,7 +115,7 @@ For a summary of the data set including the count, mean, standard deviation and 
 
 Short statistical summary of Iris Data Set:
 
-TABLE 3.
+ **TABLE 3.**
 
 Description | sepal_length |    sepal_width |   petal_length |  petal_width
 ----------- |  ----------- |  ------------- |  ------------- |  -----------
@@ -123,21 +134,27 @@ and the average length and width of a petal is 3.75 and 1.19 indicating that a p
 
 **Line 29-30**
 
-I used this code to get overall view at the data set using a histogram.
+I used this code to get an overall view at the data set using a histogram.
 
 ```data.hist()```
 ```plt.show```
+
+ **HISTOGRAM 1.**
 
 ![Figure 1. Distribution of input attribute](https://github.com/simonava5/Final-Project-for-Programming-and-Scripting/blob/master/Figure%201.%20Distribution%20of%20input%20attributes.png)
 
 **Line 34-35**
 
-Using subplots, compare each variable on a different axis with following:
+ **DIAGRAM 1**
 
-`data.plot(subplots=True, figsize=(6, 6))
-plt.show()`
+Using subplots, I compared each variable on a different axis with the following code:
+
+```data.plot(subplots=True, figsize=(6, 6))
+plt.show()```
 
 ![Figure 2. Showing variables on different axis](https://github.com/simonava5/Final-Project-for-Programming-and-Scripting/blob/master/Figure%202.%20Differences%20between%20each%20variable.png)
+
+We can clearly see by this diagram that petal length and width are the smallest from 0-50 and increase in size again from 50-100 and again from 100-150. As we already know from our data that rows 0-50 represent Iris Setosa, 50-100 - Iris Versicolor and 100-150 Iris Virginica, so it is undeniable that Iris Setosa have the smallest petals and Iris Virginica have the largest. 
 
 **Line 40**
 
@@ -171,13 +188,17 @@ To show the difference between each species attributes I sliced the values into 
 
 # 3. CONCLUSION
 
-We can see from table 3 that the average length and width of a sepal is 5.8 and 3.05,
+We can see from Table 3 that the average length and width of a sepal is 5.8 and 3.05,
 and the average length and width of a petal is 3.75 and 1.19 indicating that a petal of the Iris spieces is smaller in size than the sepal.
+
+We can clearly see by Diagram 1 that petal length and width are the smallest from 0-50 and increase in size again from 50-100 and again from 100-150. As we already know from our data that rows 0-50 represent Iris Setosa, 50-100 - Iris Versicolor and 100-150 Iris Virginica, so it is undeniable that Iris Setosa have the smallest petals and Iris Virginica have the largest. 
 
 
 
 ### REFERENCES:
 1. https://en.wikipedia.org/wiki/Ronald_Fisher
-2.  https://nbviewer.jupyter.org/github/ianmcloughlin/python-fundamentals-notes/blob/master/functions-modules.ipynb
+2. https://nbviewer.jupyter.org/github/ianmcloughlin/python-fundamentals-notes/blob/master/functions-modules.ipynb
+3. https://pandas.pydata.org/ 
+4. https://matplotlib.org/
 3. https://archive.ics.uci.edu/ml/datasets/Iris)
 4. https://pandas.pydata.org/pandas-docs/stable/visualization.html#visualization-scatter-matrix
