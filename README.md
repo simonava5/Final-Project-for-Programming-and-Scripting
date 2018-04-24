@@ -218,7 +218,7 @@ Diagram 2. provides us with a clear visualization of each species variables. The
 
 Over all, visualisating the data using Matplotlib gave me a great insight of how data can be represented. It clearly demonstarted the different patterns and relationships between the variables. It gives data a totally different dynamic. 
 
-
+-----------------------------------------------------------------------------
 ### REFERENCES:
 1. https://www.techopedia.com/definition/32880/iris-flower-data-set
 2. https://en.wikipedia.org/wiki/Ronald_Fisher

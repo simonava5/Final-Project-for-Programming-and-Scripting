@@ -28,7 +28,6 @@ print(data.tail(5))
 print(data.describe())
 
 # add a histogram to visualise data set
-
 data.hist()
 plt.show()
 
@@ -44,6 +43,26 @@ sns.boxplot(x='species', y='sepal_length', data=data)
 sns.boxplot(x='species', y='sepal_width', data=data)
 sns.boxplot(x='species', y='petal_length', data=data)
 sns.boxplot(x='species', y='petal_width', data=data)
+
+# DRAFT : to be updated
+
+sns.FacetGrid(data, hue='species', size=6) \
+.map(sns.kdeplot, 'petal_length') \
+.add_legend()
+
+sns.FacetGrid(data, hue='species', size=6) \
+.map(sns.kdeplot, 'petal_width') \
+.add_legend()
+
+sns.FacetGrid(data, hue='species', size=6) \
+.map(sns.kdeplot, 'sepal_length') \
+.add_legend()
+
+sns.FacetGrid(data, hue='species', size=6) \
+.map(sns.kdeplot, 'sepal_width') \
+.add_legend()
+
+
 
 # Separate each species values and compare each attribute
 
