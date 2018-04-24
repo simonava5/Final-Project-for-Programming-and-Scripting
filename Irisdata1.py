@@ -45,14 +45,6 @@ sns.boxplot(x='species', y='sepal_width', data=data)
 sns.boxplot(x='species', y='petal_length', data=data)
 sns.boxplot(x='species', y='petal_width', data=data)
 
-
-# I wanted to use diagrams that make sense for this data analysis and this pie chart
-# incidates the density of each variable.
-
-series = pd.Series(3 * np.random.rand(4), index=['sepal_length', 'sepal_width', 'petal_length', 'petal_width'])
-series.plot.pie(figsize=(6, 6))
-plt.show()
-
 # Separate each species values and compare each attribute
 
 setosa = data[0:49]

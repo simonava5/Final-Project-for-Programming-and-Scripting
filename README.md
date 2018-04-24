@@ -177,17 +177,6 @@ sns.boxplot(x='species', y='petal_width', data=data)`
 
 ![Relationship between spieces variables - petal length and width](https://github.com/simonava5/Final-Project-for-Programming-and-Scripting/blob/master/Petal%20Width%20%26%20Length.jpg)
 
-
-**Line 40**
-
-I wanted to show the density of each attribute, but I'm not sure if the pie chart represents this data well. 
-
-`series = pd.Series(3 * np.random.rand(4), index=['sepal_length', 'sepal_width', 'petal_length', 'petal_width'])`
-`series.plot.pie(figsize=(6, 6))`
-`plt.show()`
-
-![Density](https://github.com/simonava5/Final-Project-for-Programming-and-Scripting/blob/master/Figure_1-1.png)
-
 **Line 44**
 
 To show the difference between each species attributes I sliced the values into three groups and produced box and whisker plots.
