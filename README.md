@@ -14,7 +14,7 @@ Project Objectives:
 
 ### What is Iris Flower Data Set?
 
-The Iris flower data set is a specific set of information compiled by Ronald Fisher, a biologist, in the 1930s. It describes particular biological characteristics of various types of Iris flowers, specifically, the length and width of both pedals and the sepals, which are part of the flower’s reproductive system. [Techopedia](https://www.techopedia.com/definition/32880/iris-flower-data-set)
+The Iris flower data set is a specific set of information compiled by Ronald Fisher, a biologist, in the 1930s. It describes particular biological characteristics of various types of Iris flowers, specifically, the length and width of both pedals and the sepals, which are part of the flower’s reproductive system. [1] [Techopedia](https://www.techopedia.com/definition/32880/iris-flower-data-set)
 
 ### About Ronald Fisher
 
@@ -48,20 +48,24 @@ Using pandas software library, open file irisdata.csv.
 
 -----------------------------------------------------------------------------------------------------------------------
 
-About the libraries that I will be using:
+About the libraries which I will be using for this analysis:
 
 ### What is Numpy?
 
-Numpy provides functions for dealing with numerical data efficiently in Python. While Python does already provide good mathematical functionality out of the box, numpy is highly efficient at things like multiplying matrices and dealing with huge arrays of data. [2]
+Numpy provides functions for dealing with numerical data efficiently in Python. Numpy is highly efficient at things like multiplying matrices and dealing with huge arrays of data. [2]
 
 ### What is Pandas?
 
-Pandas is an open source, BSD-licensed library providing high-performance, easy-to-use data structures and data analysis tools for the Python programming language. [3]
+Pandas is an open source, BSD-licensed library that provides high-performance, easy-to-use data structures and data analysis tools for the Python programming language. [3]
 
 ### What is Matplot?
 
 Matplotlib is a plotting library for the Python programming language and its numerical mathematics extension NumPy.
-Matplotlib is a Python 2D plotting library which produces publication quality figures in a variety of hardcopy formats and interactive environments across platforms. Matplotlib can be used in Python scripts, the Python and IPython shells, the Jupyter notebook, web application servers, and four graphical user interface toolkits.[4]
+Matplotlib is a Python 2D plotting library which produces publication quality figures in a variety of hardcopy formats and interactive environments across platforms.[4]
+
+### What is Seaborn?
+
+Seaborn is a Python visualization library based on matplotlib. It provides a high-level interface for drawing attractive statistical graphics.[5]
 
 # 2. ANALYSIS
 
@@ -76,7 +80,7 @@ In this analysis of the Iris Data Set, I will be looking at 3 species - Iris Set
 
 **Line 18**
 
-To check the for the amount of each species in this data set
+Check for the amount of each species in this data set.
 
 ``print(data["species"].value_counts())``
 
@@ -86,11 +90,11 @@ versicolor    50
 virginica     50
 setosa        50
 
-**Line 19 and 22**
+**Line 22 and 25**
 
 Before diving deep into this data set, I quickly pulled up first and last 5 rows of the data to check that everything looks correct and that it matches the csv file I imported with the Iris Data Set.
 
-```data.head(5)```
+`data.head(5)`
 
 First 5 rows of the data set:
 
@@ -104,7 +108,7 @@ sepal_length |  sepal_width | petal_length | petal_width |species
  4.6      |    3.1         |  1.5       |   0.2  | setosa
 5.0      |    3.6         |  1.4      |    0.2 | setosa
 
-```data.tail(5)```
+`data.tail(5)`
 
 Last 5 rows of the data set:
 
@@ -118,11 +122,11 @@ sepal_length | sepal_width | petal_length | petal_width  |  species
 6.2       |   3.4       |   5.4       |  2.3 |  virginica
 5.9       |  3.0        |  5.1        |  1.8 |  virginica
 
-**Line 25**
+**Line 28**
 
 For a statistical summary of the data set including the count, mean, standard deviation and percentiles of each column, I used following code:
 
-```data.describe()```
+`data.describe()`
 
 Short statistical summary of Iris Data Set:
 
@@ -140,10 +144,10 @@ min    |     4.300000   |   2.000000   |   1.000000   |   0.100000
 max    |     7.900000  |    4.400000   |    6.900000  |    2.500000
 
 
-We can see from this table that the average length and width of a sepal is 5.8 and 3.05
-and the average length and width of a petal is 3.75 and 1.19 indicating that a petal of the Iris spieces is smaller in size than the sepal.
+We can see from this table that the average length and width of a sepal is **5.8** and **3.05**
+and the average length and width of a petal is **3.75** and **1.19** indicating that a petal of the Iris spieces is smaller in size than the sepal.
 
-**Line 29-30**
+**Line 31-32**
 
 I used this code to get an overall view at the data set using a histogram.
 
@@ -156,12 +160,12 @@ I used this code to get an overall view at the data set using a histogram.
 
 **Line 34-35**
 
- **DIAGRAM 1.**
-
 Using subplots, I compared each variable on a different axis with the following code:
 
 `data.plot(subplots=True, figsize=(6, 6))
 plt.show()`
+
+ **DIAGRAM 1.**
 
 ![Figure 2. Showing variables on different axis](https://github.com/simonava5/Final-Project-for-Programming-and-Scripting/blob/master/Figure%202.%20Differences%20between%20each%20variable.png)
 
@@ -182,8 +186,6 @@ sns.boxplot(x='species', y='petal_width', data=data)`
 
 To show the difference between each species attributes I sliced the values into three groups and produced box and whisker plots. As I mentioned above I found boxplots to represent this data better, but I will leave this code below.
 
- **DIAGRAM 2.**
-
 `setosa = data[0:49]`
 `versicolor = data[50:99]`
 `virginica = data[100:149]`
@@ -193,6 +195,8 @@ To show the difference between each species attributes I sliced the values into 
 `versicolor.plot(kind='box', subplots=True, layout=(2,2), sharex=False, sharey=False)`
 
 `virginica.plot(kind='box', subplots=True, layout=(2,2), sharex=False, sharey=False)`
+
+**DIAGRAM 2.**
 
 ![Iris Setosa](https://github.com/simonava5/Final-Project-for-Programming-and-Scripting/blob/master/setosa.png)
 
@@ -216,9 +220,9 @@ Over all, visualisating the data using Matplotlib gave me a great insight of how
 
 
 ### REFERENCES:
-1. https://en.wikipedia.org/wiki/Ronald_Fisher
-2. https://nbviewer.jupyter.org/github/ianmcloughlin/python-fundamentals-notes/blob/master/functions-modules.ipynb
+1. https://www.techopedia.com/definition/32880/iris-flower-data-set
+2. https://en.wikipedia.org/wiki/Ronald_Fisher
 3. https://pandas.pydata.org/ 
 4. https://matplotlib.org/
-3. https://archive.ics.uci.edu/ml/datasets/Iris)
-4. https://pandas.pydata.org/pandas-docs/stable/visualization.html#visualization-scatter-matrix
+5. https://seaborn.pydata.org/
+6. https://archive.ics.uci.edu/ml/datasets/Iris)
