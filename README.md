@@ -178,6 +178,8 @@ sns.boxplot(x='species', y='sepal_width', data=data)
 sns.boxplot(x='species', y='petal_length', data=data)
 sns.boxplot(x='species', y='petal_width', data=data)`
 
+**DIAGRAM 2.**
+
 ![Relationship between spieces variables - sepal length and width](https://github.com/simonava5/Final-Project-for-Programming-and-Scripting/blob/master/Sepal%20Width%20%26%20Length.png)
 
 ![Relationship between spieces variables - petal length and width](https://github.com/simonava5/Final-Project-for-Programming-and-Scripting/blob/master/Petal%20Width%20%26%20Length.jpg)
@@ -196,7 +198,7 @@ To show the difference between each species attributes I sliced the values into 
 
 `virginica.plot(kind='box', subplots=True, layout=(2,2), sharex=False, sharey=False)`
 
-**DIAGRAM 2.**
+**DIAGRAM 3.**
 
 ![Iris Setosa](https://github.com/simonava5/Final-Project-for-Programming-and-Scripting/blob/master/setosa.png)
 
@@ -214,7 +216,9 @@ We can see from Table 3 that the average length and width of a sepal is 5.8 and 
 
 We can clearly see from Diagram 1 that petal length and width are the smallest from 0-50 and increase in size again from 50-100 and again from 100-150. As we already know from our data that rows 0-50 represent Iris Setosa, 50-100 - Iris Versicolor and 100-150 Iris Virginica, so it is undeniable that Iris Setosa have the smallest petals and Iris Virginica have the largest. 
 
-Diagram 2. provides us with a clear visualization of each species variables. The biggest difference can be seen between Iris Setosa and Iris Virginica, and Iris Versicolor falls somewhere in the middle.
+
+
+Diagram 3. provides us with a clear visualization of each species variables. The biggest difference can be seen between Iris Setosa and Iris Virginica, and Iris Versicolor falls somewhere in the middle.
 
 Over all, visualisating the data using Matplotlib gave me a great insight of how data can be represented. It clearly demonstarted the different patterns and relationships between the variables. It gives data a totally different dynamic. 
 
