@@ -73,6 +73,18 @@ In this analysis of the Iris Data Set, I will be looking at 3 species - Iris Set
 
 ![Iris Flower](https://github.com/simonava5/Final-Project-for-Programming-and-Scripting/blob/master/Iris%20flower%20petal%20and%20sepal.jpg)
 
+**Line 18**
+
+To check the for the amount of each species in this data set
+
+``print(data["species"].value_counts())``
+
+*Output:*
+
+versicolor    50
+virginica     50
+setosa        50
+
 **Line 19 and 22**
 
 Before diving deep into this data set, I quickly pulled up first and last 5 rows of the data to check that everything looks correct and that it matches the csv file I imported with the Iris Data Set.
@@ -153,6 +165,15 @@ plt.show()`
 ![Figure 2. Showing variables on different axis](https://github.com/simonava5/Final-Project-for-Programming-and-Scripting/blob/master/Figure%202.%20Differences%20between%20each%20variable.png)
 
 We can clearly see by this diagram that petal length and width are the smallest from 0-50 and increase in size again from 50-100 and again from 100-150. As we already know from our data that rows 0-50 represent Iris Setosa, 50-100 - Iris Versicolor and 100-150 Iris Virginica, so it is undeniable that Iris Setosa have the smallest petals and Iris Virginica have the largest. 
+
+I also discovered another great way of visualising this data is through seaborn library. These plots provide a very clear relationship between the variables of each species. This version is much clearer and crisp then the subplots I used on lines 194.
+
+`sns.boxplot(x='species', y='sepal_length', data=data)
+sns.boxplot(x='species', y='sepal_width', data=data)
+sns.boxplot(x='species', y='petal_length', data=data)
+sns.boxplot(x='species', y='petal_width', data=data)`
+
+
 
 **Line 40**
 

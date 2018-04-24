@@ -9,18 +9,23 @@ import matplotlib.pyplot as plt
 import pandas as pd
 
 
-# I used pandas to load data from this file - iris.data.cs
+# I used pandas to load data from this file - iris.data.csv
 data = pd.read_csv('irisdata.csv', header = 0)
+
+# to check that there is definately three different spieces
+# investigated
+
+print(data['species'].value_counts())
 
 # quick analysis of the data
 # checking first 5 rows of the data
-data.head(5)
+print(data.head(5))
 
 # check last 5 rows of the data
-data.tail(5)
+print(data.tail(5))
 
 # check statistical summary of the data set
-data.describe()
+print(data.describe())
 
 # add a histogram to visualise data set
 
@@ -31,6 +36,15 @@ plt.show()
 
 data.plot(subplots=True, figsize=(6, 6))
 plt.show()
+
+# using seaborn library to show the difference for each variable
+# in each species
+
+sns.boxplot(x='species', y='sepal_length', data=data)
+sns.boxplot(x='species', y='sepal_width', data=data)
+sns.boxplot(x='species', y='petal_length', data=data)
+sns.boxplot(x='species', y='petal_width', data=data)
+
 
 # I wanted to use diagrams that make sense for this data analysis and this pie chart
 # incidates the density of each variable.
