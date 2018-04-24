@@ -35,6 +35,7 @@ Also import the following software libraries in visual code where you are going 
 1. Numpy [import *numpy* as *np*]
 2. Pandas [import *pandas* as *pd*]
 3. Matplotlib [import *matplotlib.pyplot* as *plt*]
+4. Seaborn [import *seaborn* as *sns*]
 
 Save the data set from this [link](https://archive.ics.uci.edu/ml/machine-learning-databases/iris/iris.data)
 or use it from my GitHub account [here](https://github.com/simonava5/Final-Project-for-Programming-and-Scripting/blob/master/irisdata.csv), click raw to copy and save it on your device. 
@@ -166,7 +167,7 @@ plt.show()`
 
 We can clearly see by this diagram that petal length and width are the smallest from 0-50 and increase in size again from 50-100 and again from 100-150. As we already know from our data that rows 0-50 represent Iris Setosa, 50-100 - Iris Versicolor and 100-150 Iris Virginica, so it is undeniable that Iris Setosa have the smallest petals and Iris Virginica have the largest. 
 
-I also discovered another great way of visualising this data is through seaborn library. These plots provide a very clear relationship between the variables of each species. This version is much clearer and crisp then the subplots I used on lines 194.
+I also discovered another great way to visualise this data is through seaborn library. These plots provide a very clear relationship between the variables of each species. This version is much clearer and crisp then the subplots I used on lines 44.
 
 `sns.boxplot(x='species', y='sepal_length', data=data)
 sns.boxplot(x='species', y='sepal_width', data=data)
@@ -179,7 +180,7 @@ sns.boxplot(x='species', y='petal_width', data=data)`
 
 **Line 44**
 
-To show the difference between each species attributes I sliced the values into three groups and produced box and whisker plots.
+To show the difference between each species attributes I sliced the values into three groups and produced box and whisker plots. As I mentioned above I found boxplots to represent this data better, but I will leave this code below.
 
  **DIAGRAM 2.**
 
