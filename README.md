@@ -173,6 +173,9 @@ sns.boxplot(x='species', y='sepal_width', data=data)
 sns.boxplot(x='species', y='petal_length', data=data)
 sns.boxplot(x='species', y='petal_width', data=data)`
 
+![Relationship between spieces variables - sepal length and width](https://github.com/simonava5/Final-Project-for-Programming-and-Scripting/blob/master/Sepal%20Width%20%26%20Length.png)
+
+![Relationship between spieces variables - petal length and width](https://github.com/simonava5/Final-Project-for-Programming-and-Scripting/blob/master/Petal%20Width%20%26%20Length.jpg)
 
 
 **Line 40**
