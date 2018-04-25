@@ -7,13 +7,12 @@
 import numpy as np
 import matplotlib.pyplot as plt
 import pandas as pd
+import seaborn as sns
 
-
-# I used pandas to load data from this file - iris.data.csv
+# use pandas to load data from this file - irisdata.csv
 data = pd.read_csv('irisdata.csv', header = 0)
 
-# to check that there is definately three different spieces
-# investigated
+# check how many different types of species are in this data set
 
 print(data['species'].value_counts())
 
@@ -36,15 +35,14 @@ plt.show()
 data.plot(subplots=True, figsize=(6, 6))
 plt.show()
 
-# using seaborn library to show the difference for each variable
-# in each species
-
+# use seaborn library to show the difference between all attributes
 sns.boxplot(x='species', y='sepal_length', data=data)
 sns.boxplot(x='species', y='sepal_width', data=data)
 sns.boxplot(x='species', y='petal_length', data=data)
 sns.boxplot(x='species', y='petal_width', data=data)
+plt.show()
 
-# DRAFT : to be updated
+# show relationship between attributes using seaborn kdeplot
 
 sns.FacetGrid(data, hue='species', size=6) \
 .map(sns.kdeplot, 'petal_length') \
@@ -62,15 +60,15 @@ sns.FacetGrid(data, hue='species', size=6) \
 .map(sns.kdeplot, 'sepal_width') \
 .add_legend()
 
+plt.show()
 
-
-# Separate each species values and compare each attribute
+# separate each species values and compare each attribute
 
 setosa = data[0:49]
 versicolor = data[50:99]
 virginica = data[100:149]
 
-# to show the difference in each species attributes I used a box and whisker plots
+# to show the difference of all attributes I used a box and whisker plots
 
 setosa.plot(kind='box', subplots=True, layout=(2,2), sharex=False, sharey=False)
 versicolor.plot(kind='box', subplots=True, layout=(2,2), sharex=False, sharey=False)
