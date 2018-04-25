@@ -6,7 +6,7 @@ Project Objectives:
 - [x] 1. Research background information about the data set and write a summary about it.
 - [x] 2. Keep a list of references you used in completing the project.
 - [x] 3. Download the data set and write some Python code to investigate it.
-- [x] 4. Summarise the data set by, for example, calculating the maximum, minimum and mean of each column of the data set.
+- [ ] 4. Summarise the data set by, for example, calculating the maximum, minimum and mean of each column of the data set. A Python script will quickly do this for you.
 - [ ] 5. Write a summary of your investigations.
 - [x] 6. Include supporting tables and graphics as you deem necessary.
 
@@ -14,7 +14,7 @@ Project Objectives:
 
 ### What is Iris Flower Data Set?
 
-The Iris flower data set is a specific set of information compiled by Ronald Fisher, a biologist, in the 1930s. It describes particular biological characteristics of various types of Iris flowers, specifically, the length and width of both petals and the sepals, which are part of the flower’s reproductive system. [1] [Techopedia](https://www.techopedia.com/definition/32880/iris-flower-data-set)
+The Iris flower data set is a specific set of information compiled by Ronald Fisher, a biologist, in the 1930s. It describes particular biological characteristics of various types of Iris flowers, specifically, the length and width of both pedals and the sepals, which are part of the flower’s reproductive system. [1] [Techopedia](https://www.techopedia.com/definition/32880/iris-flower-data-set)
 
 ### About Ronald Fisher
 
@@ -184,6 +184,32 @@ sns.boxplot(x='species', y='petal_width', data=data)`
 
 ![Relationship between spieces variables - petal length and width](https://github.com/simonava5/Final-Project-for-Programming-and-Scripting/blob/master/Petal%20Width%20%26%20Length.jpg)
 
+**Line 47**
+
+To visualise this data's attributes on a curve diagram, I used another function from seaborn library
+
+`sns.FacetGrid(data, hue='species', size=6) \
+.map(sns.kdeplot, 'petal_length') \
+.add_legend()`
+
+`sns.FacetGrid(data, hue='species', size=6) \
+.map(sns.kdeplot, 'petal_width') \
+.add_legend()`
+
+`sns.FacetGrid(data, hue='species', size=6) \
+.map(sns.kdeplot, 'sepal_length') \
+.add_legend()`
+
+`sns.FacetGrid(data, hue='species', size=6) \
+.map(sns.kdeplot, 'sepal_width') \
+.add_legend()`
+
+DIAGRAM 3.
+
+![Petal Length](C:\Users\Simon_000\Desktop\Final-Project-for-Programming-and-Scripting\Curve Diagram Petal L.png)
+
+![Petal Width](C:\Users\Simon_000\Desktop\Final-Project-for-Programming-and-Scripting\Curve Diagram Petal W.png)
+
 **Line 44**
 
 To show the difference between each species attributes I sliced the values into three groups and produced box and whisker plots. As I mentioned above I found boxplots to represent this data better, but I will leave this code below.
@@ -198,7 +224,7 @@ To show the difference between each species attributes I sliced the values into 
 
 `virginica.plot(kind='box', subplots=True, layout=(2,2), sharex=False, sharey=False)`
 
-**DIAGRAM 3.**
+**DIAGRAM 4.**
 
 ![Iris Setosa](https://github.com/simonava5/Final-Project-for-Programming-and-Scripting/blob/master/setosa.png)
 
@@ -218,7 +244,7 @@ We can clearly see from Diagram 1 that petal length and width are the smallest f
 
 
 
-Diagram 3. provides us with a clear visualization of each species variables. The biggest difference can be seen between Iris Setosa and Iris Virginica, and Iris Versicolor falls somewhere in the middle.
+Diagram 4.. provides us with a clear visualization of each species variables. The biggest difference can be seen between Iris Setosa and Iris Virginica, and Iris Versicolor falls somewhere in the middle.
 
 Over all, visualisating the data using Matplotlib gave me a great insight of how data can be represented. It clearly demonstarted the different patterns and relationships between the variables. It gives data a totally different dynamic. 
 
