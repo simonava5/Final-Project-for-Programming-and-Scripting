@@ -6,7 +6,7 @@ Project Objectives:
 - [x] 1. Research background information about the data set and write a summary about it.
 - [x] 2. Keep a list of references you used in completing the project.
 - [x] 3. Download the data set and write some Python code to investigate it.
-- [ ] 4. Summarise the data set by, for example, calculating the maximum, minimum and mean of each column of the data set. A Python script will quickly do this for you.
+- [x] 4. Summarise the data set by, for example, calculating the maximum, minimum and mean of each column of the data set.
 - [ ] 5. Write a summary of your investigations.
 - [x] 6. Include supporting tables and graphics as you deem necessary.
 
@@ -14,7 +14,7 @@ Project Objectives:
 
 ### What is Iris Flower Data Set?
 
-The Iris flower data set is a specific set of information compiled by Ronald Fisher, a biologist, in the 1930s. It describes particular biological characteristics of various types of Iris flowers, specifically, the length and width of both pedals and the sepals, which are part of the flower’s reproductive system. [1] [Techopedia](https://www.techopedia.com/definition/32880/iris-flower-data-set)
+The Iris flower data set is a specific set of information compiled by Ronald Fisher, a biologist, in the 1930s. It describes particular biological characteristics of various types of Iris flowers, specifically, the length and width of both petals and the sepals, which are part of the flower’s reproductive system. [1] [Techopedia](https://www.techopedia.com/definition/32880/iris-flower-data-set)
 
 ### About Ronald Fisher
 
