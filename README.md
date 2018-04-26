@@ -257,7 +257,9 @@ Again in **Diagram 2** shows a very distinctive size difference in each species 
 
 **Diagram 4** provides us with a clear visualization of each species variables. The biggest difference can be seen between Iris Setosa and Iris Virginica, and Iris Versicolor falls somewhere in the middle.
 
-Over all, visualisating the data using **Matplotlib** gave me a great insight of how data can be represented. It clearly demonstrated the different patterns and relationships between the variables. It gives data a totally different dynamic. After further research into the different libraries available for **data representation** I did find seaborn to be useful too. 
+Over all, visualisating the data using **Matplotlib** gave me a great insight of how data can be represented. After watching tutorials online and using original matplotlib website, it is quite an easy tool to use for data representation. It clearly demonstrated the different patterns and relationships between the variables with the ability to include colour in the diagrams. It gives data a totally different dynamic. After further research into the different libraries available for **data representation** I did find seaborn to be useful too. 
+
+I also found **pandas** library great for data selection and manipulation. Easy to use for indexing and axis labelling.
 
 --------------------------------------------------------------------------------
 ### REFERENCES:
