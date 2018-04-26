@@ -187,6 +187,7 @@ sns.boxplot(x='species', y='petal_width', data=data)`
 ![Relationship between spieces variables - petal length and width](https://github.com/simonava5/Final-Project-for-Programming-and-Scripting/blob/master/Petal%20Width%20%26%20Length.jpg)
 
 **Line 45-62**
+
 To visualise this data's attributes on a curve diagram, I used another function from seaborn library
 
 `sns.FacetGrid(data, hue='species', size=6) \
@@ -218,6 +219,7 @@ To visualise this data's attributes on a curve diagram, I used another function 
 It's very clear from these diagrams how much they differ in size.
 
 **Line 64-71**
+
 To show the difference between each species attributes I sliced the values into three groups and produced box and whisker plots. As I mentioned above I found boxplots to represent this data better, but I will leave this code below.
 
 `setosa = data[0:49]`
@@ -242,23 +244,23 @@ This diagram provides us with a clear visualization of each species variables. T
 
 # 3. CONCLUSION
 
-I found it extremely useful to get a general idea about the data to begin with using simple Python functions such as describe(). It provided me with some basic information which gave me a greater understanding of what I've to work with.
+I found it extremely useful to get a general idea about the data to begin with using simple Python functions such as **describe()**. It provided me with some basic information which gave me a greater understanding of what I've to work with.
 
-We can see from Table 3 that the average length and width of a sepal is 5.8 and 3.05, and the average length and width of a petal is 3.75 and 1.19 indicating that a petal of the Iris spieces is smaller in size than the sepal.
+We can see from **Table 3** that the average length and width of a sepal is 5.8 and 3.05, and the average length and width of a petal is 3.75 and 1.19 indicating that a petal of the Iris spieces is smaller in size than the sepal.
 
-We can clearly see from Diagram 1 that petal length and width are the smallest from 0-50 and increase in size again from 50-100 and again from 100-150. As we already know from our data that rows 0-50 represent Iris Setosa, 50-100 - Iris Versicolor and 100-150 Iris Virginica, so it is undeniable that Iris Setosa have the smallest petals and Iris Virginica have the largest. 
+We can clearly see from **Diagram 1** that petal length and width are the smallest from 0-50 and increase in size again from 50-100 and again from 100-150. As we already know from our data that rows 0-50 represent Iris Setosa, 50-100 - Iris Versicolor and 100-150 Iris Virginica, so it is undeniable that Iris Setosa have the smallest petals and Iris Virginica have the largest. 
 
+**Diagram 2** shows a very distinctive size difference in each species with Iris Virginica proving to be the largest.
 
+**Diagram 4** provides us with a clear visualization of each species variables. The biggest difference can be seen between Iris Setosa and Iris Virginica, and Iris Versicolor falls somewhere in the middle.
 
-Diagram 4.. provides us with a clear visualization of each species variables. The biggest difference can be seen between Iris Setosa and Iris Virginica, and Iris Versicolor falls somewhere in the middle.
+Over all, visualisating the data using Matplotlib gave me a great insight of how data can be represented. It clearly demonstrated the different patterns and relationships between the variables. It gives data a totally different dynamic. After further research into the different libraries available for data representation I did find seaborn to be useful too. 
 
-Over all, visualisating the data using Matplotlib gave me a great insight of how data can be represented. It clearly demonstarted the different patterns and relationships between the variables. It gives data a totally different dynamic. 
-
------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
 ### REFERENCES:
 1. https://www.techopedia.com/definition/32880/iris-flower-data-set
 2. https://en.wikipedia.org/wiki/Ronald_Fisher
 3. https://pandas.pydata.org/ 
 4. https://matplotlib.org/
 5. https://seaborn.pydata.org/
-6. https://archive.ics.uci.edu/ml/datasets/Iris)
+6. https://archive.ics.uci.edu/ml/datasets/Iris
