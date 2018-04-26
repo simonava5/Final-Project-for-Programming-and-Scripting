@@ -31,7 +31,6 @@ data.hist()
 plt.show()
 
 # using subplots, add a histogram of each variable on a different axis
-
 data.plot(subplots=True, figsize=(6, 6))
 plt.show()
 
@@ -43,7 +42,6 @@ sns.boxplot(x='species', y='petal_width', data=data)
 plt.show()
 
 # show relationship between attributes using seaborn kdeplot
-
 sns.FacetGrid(data, hue='species', size=6) \
 .map(sns.kdeplot, 'petal_length') \
 .add_legend()
@@ -63,23 +61,13 @@ sns.FacetGrid(data, hue='species', size=6) \
 plt.show()
 
 # separate each species values and compare each attribute
-
 setosa = data[0:49]
 versicolor = data[50:99]
 virginica = data[100:149]
 
 # to show the difference of all attributes I used a box and whisker plots
-
 setosa.plot(kind='box', subplots=True, layout=(2,2), sharex=False, sharey=False)
 versicolor.plot(kind='box', subplots=True, layout=(2,2), sharex=False, sharey=False)
 virginica.plot(kind='box', subplots=True, layout=(2,2), sharex=False, sharey=False)
 
-
-
-
-
-
-
-
-
-
+plt.show()
