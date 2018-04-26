@@ -83,7 +83,7 @@ In this analysis of the Iris Data Set, I will be looking at 3 species - Iris Set
 
 **Line 17**
 
-Check for the amount of each species in this data set.
+Check for the amount of each species in this data set
 
 ``print(data["species"].value_counts())``
 
