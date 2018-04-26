@@ -4,24 +4,24 @@ Final Project 2018 for Programming and Scripting module researching and analysin
 Project Objectives:
 
 - [x] 1. Research background information about the data set and write a summary about it.
-- [x] 2. Keep a list of references you used in completing the project.
+- [x] 2. Keep a list of references used in completing the project.
 - [x] 3. Download the data set and write some Python code to investigate it.
-- [ ] 4. Summarise the data set by, for example, calculating the maximum, minimum and mean of each column of the data set. A Python script will quickly do this for you.
-- [ ] 5. Write a summary of your investigations.
+- [x] 4. Summarise the data set by, for example, calculating the maximum, minimum and mean of each column of the data set.
+- [x] 5. Write a summary of these investigations.
 - [x] 6. Include supporting tables and graphics as you deem necessary.
 
 # 1. RESEARCH
 
 ### What is Iris Flower Data Set?
 
-The Iris flower data set is a specific set of information compiled by Ronald Fisher, a biologist, in the 1930s. It describes particular biological characteristics of various types of Iris flowers, specifically, the length and width of both pedals and the sepals, which are part of the flower’s reproductive system. [1] [Techopedia](https://www.techopedia.com/definition/32880/iris-flower-data-set)
+The Iris flower data set is a specific set of information compiled by Ronald Fisher, a biologist, in the 1930s. It describes particular biological characteristics of various types of Iris flowers, specifically, the length and width of both petals and the sepals, which are part of the flower’s reproductive system. [1] 
 
 ### About Ronald Fisher
 
 ![Young Ronald Fisher](https://upload.wikimedia.org/wikipedia/commons/2/21/RonaldFisher1912.jpg)
 
 Touted as the greatest scientist of his time, Sir Ronald Fisher (1890-1962) was a British statistician and biologist who was known for his contributions to experimental design and population genetics. 
-For his work in statistics, he has been described as "a genius who almost single-handedly created the foundations for modern statistical science" and "the single most important figure in 20th century statistics". In genetics, his work used mathematics to combine Mendelian genetics and natural selection; this contributed to the revival of Darwinism in the early 20th century revision of the theory of evolution known as the modern synthesis. Fisher also did experimental agricultural research, which has saved millions from starvation. [Wikipedia](https://en.wikipedia.org/wiki/Ronald_Fisher)
+For his work in statistics, he has been described as "a genius who almost single-handedly created the foundations for modern statistical science" and "the single most important figure in 20th century statistics". In genetics, his work used mathematics to combine Mendelian genetics and natural selection; this contributed to the revival of Darwinism in the early 20th century revision of the theory of evolution known as the modern synthesis. Fisher also did experimental agricultural research, which has saved millions from starvation. [2]
 
 ### Instructions
 
@@ -42,7 +42,7 @@ or use it from my GitHub account [here](https://github.com/simonava5/Final-Proje
 
 You can find the code I created to analyse this dataset in **Irisdata1.py** file.
 
-Using pandas software library, open file irisdata.csv.
+Using pandas software library, open file irisdata.csv
 
 ```Data = pd.read_csv('irisdata.csv', header = 0)```
 
@@ -52,16 +52,16 @@ About the libraries which I will be using for this analysis:
 
 ### What is Numpy?
 
-Numpy provides functions for dealing with numerical data efficiently in Python. Numpy is highly efficient at things like multiplying matrices and dealing with huge arrays of data. [2]
+Numpy provides functions for dealing with numerical data efficiently in Python. Numpy is highly efficient at things like multiplying matrices and dealing with huge arrays of data. [3]
 
 ### What is Pandas?
 
-Pandas is an open source, BSD-licensed library that provides high-performance, easy-to-use data structures and data analysis tools for the Python programming language. [3]
+Pandas is an open source, BSD-licensed library that provides high-performance, easy-to-use data structures and data analysis tools for the Python programming language. [4]
 
 ### What is Matplot?
 
 Matplotlib is a plotting library for the Python programming language and its numerical mathematics extension NumPy.
-Matplotlib is a Python 2D plotting library which produces publication quality figures in a variety of hardcopy formats and interactive environments across platforms.[4]
+Matplotlib is a Python 2D plotting library which produces publication quality figures in a variety of hardcopy formats and interactive environments across platforms.[5]
 
 ### What is Seaborn?
 
@@ -78,7 +78,7 @@ In this analysis of the Iris Data Set, I will be looking at 3 species - Iris Set
 
 ![Iris Flower](https://github.com/simonava5/Final-Project-for-Programming-and-Scripting/blob/master/Iris%20flower%20petal%20and%20sepal.jpg)
 
-**Line 18**
+**Line 17**
 
 Check for the amount of each species in this data set.
 
@@ -90,7 +90,7 @@ versicolor    50
 virginica     50
 setosa        50
 
-**Line 22 and 25**
+**Line 21 and 24**
 
 Before diving deep into this data set, I quickly pulled up first and last 5 rows of the data to check that everything looks correct and that it matches the csv file I imported with the Iris Data Set.
 
@@ -122,7 +122,7 @@ sepal_length | sepal_width | petal_length | petal_width  |  species
 6.2       |   3.4       |   5.4       |  2.3 |  virginica
 5.9       |  3.0        |  5.1        |  1.8 |  virginica
 
-**Line 28**
+**Line 27**
 
 For a statistical summary of the data set including the count, mean, standard deviation and percentiles of each column, I used following code:
 
@@ -147,12 +147,12 @@ max    |     7.900000  |    4.400000   |    6.900000  |    2.500000
 We can see from this table that the average length and width of a sepal is **5.8** and **3.05**
 and the average length and width of a petal is **3.75** and **1.19** indicating that a petal of the Iris spieces is smaller in size than the sepal.
 
-**Line 31-32**
+**Line 30-31**
 
 I used this code to get an overall view at the data set using a histogram.
 
-```data.hist()```
-```plt.show()```
+`data.hist()`
+`plt.show()`
 
  **HISTOGRAM 1.**
 
@@ -171,6 +171,8 @@ plt.show()`
 
 We can clearly see by this diagram that petal length and width are the smallest from 0-50 and increase in size again from 50-100 and again from 100-150. As we already know from our data that rows 0-50 represent Iris Setosa, 50-100 - Iris Versicolor and 100-150 Iris Virginica, so it is undeniable that Iris Setosa have the smallest petals and Iris Virginica have the largest. 
 
+**Lines 38-42**
+
 I also discovered another great way to visualise this data is through seaborn library. These plots provide a very clear relationship between the variables of each species. This version is much clearer and crisp then the subplots I used on lines 44.
 
 `sns.boxplot(x='species', y='sepal_length', data=data)
@@ -184,8 +186,7 @@ sns.boxplot(x='species', y='petal_width', data=data)`
 
 ![Relationship between spieces variables - petal length and width](https://github.com/simonava5/Final-Project-for-Programming-and-Scripting/blob/master/Petal%20Width%20%26%20Length.jpg)
 
-**Line 47**
-
+**Line 45-62**
 To visualise this data's attributes on a curve diagram, I used another function from seaborn library
 
 `sns.FacetGrid(data, hue='species', size=6) \
@@ -204,14 +205,19 @@ To visualise this data's attributes on a curve diagram, I used another function 
 .map(sns.kdeplot, 'sepal_width') \
 .add_legend()`
 
-DIAGRAM 3.
+**DIAGRAM 3.**
 
-![Petal Length](C:\Users\Simon_000\Desktop\Final-Project-for-Programming-and-Scripting\Curve Diagram Petal L.png)
+![Petal Length](https://github.com/simonava5/Final-Project-for-Programming-and-Scripting/blob/master/Curve%20Diagram%20Petal%20L.png)
 
-![Petal Width](C:\Users\Simon_000\Desktop\Final-Project-for-Programming-and-Scripting\Curve Diagram Petal W.png)
+![Petal Width](https://github.com/simonava5/Final-Project-for-Programming-and-Scripting/blob/master/Curve%20Diagram%20Petal%20W.png)
 
-**Line 44**
+![Sepal Length](https://github.com/simonava5/Final-Project-for-Programming-and-Scripting/blob/master/Curve%20Diagram%20Sepal%20L.png)
 
+![Sepal Width](https://github.com/simonava5/Final-Project-for-Programming-and-Scripting/blob/master/Curve%20Diagram%20Sepal%20W.png)
+
+It's very clear from these diagrams how much they differ in size.
+
+**Line 64-71**
 To show the difference between each species attributes I sliced the values into three groups and produced box and whisker plots. As I mentioned above I found boxplots to represent this data better, but I will leave this code below.
 
 `setosa = data[0:49]`
@@ -236,7 +242,7 @@ This diagram provides us with a clear visualization of each species variables. T
 
 # 3. CONCLUSION
 
-I found it extremely useful to get a general idea about the data to be analyzed using simple Python functions such as describe(). It provided me with some basic information which gave me a greater understanding of what I've to work with.
+I found it extremely useful to get a general idea about the data to begin with using simple Python functions such as describe(). It provided me with some basic information which gave me a greater understanding of what I've to work with.
 
 We can see from Table 3 that the average length and width of a sepal is 5.8 and 3.05, and the average length and width of a petal is 3.75 and 1.19 indicating that a petal of the Iris spieces is smaller in size than the sepal.
 
