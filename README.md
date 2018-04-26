@@ -261,7 +261,7 @@ Over all, visualisating the data using **Matplotlib** gave me a great insight of
 
 --------------------------------------------------------------------------------
 ### REFERENCES:
-1.http://patrickhoey.com/downloads/Computer_Science/03_Patrick_Hoey_Data_Visualization_Dataset_paper.pdf
+1. http://patrickhoey.com/downloads/Computer_Science
 2. https://en.wikipedia.org/wiki/Ronald_Fisher
 3. http://www.numpy.org/
 4. https://pandas.pydata.org/ 
