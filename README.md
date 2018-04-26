@@ -12,16 +12,19 @@ Project Objectives:
 
 # 1. RESEARCH
 
-### What is Iris Flower Data Set?
+### Iris Flower Data Set
 
-The Iris flower data set is a specific set of information compiled by Ronald Fisher, a biologist, in the 1930s. It describes particular biological characteristics of various types of Iris flowers, specifically, the length and width of both petals and the sepals, which are part of the flower’s reproductive system. [1] 
+The Iris flower data set is a popular multivariate
+dataset that was introduced by Ronald Fisher in 1930's. It reports on four different types of characteristics of three Iris Spieces - Iris Setosa, Iris Versicolor and Iris Virginica. It is widely used amongst programmers to practice different Python functions and run a series of methods to extract certain information. [1]
 
 ### About Ronald Fisher
 
 ![Young Ronald Fisher](https://upload.wikimedia.org/wikipedia/commons/2/21/RonaldFisher1912.jpg)
 
-Touted as the greatest scientist of his time, Sir Ronald Fisher (1890-1962) was a British statistician and biologist who was known for his contributions to experimental design and population genetics. 
-For his work in statistics, he has been described as "a genius who almost single-handedly created the foundations for modern statistical science" and "the single most important figure in 20th century statistics". In genetics, his work used mathematics to combine Mendelian genetics and natural selection; this contributed to the revival of Darwinism in the early 20th century revision of the theory of evolution known as the modern synthesis. Fisher also did experimental agricultural research, which has saved millions from starvation. [2]
+Known as the greatest scientist of his time, Ronald Fisher was a British statistician and biologist who was known for his contributions to experimental design and population genetics. 
+
+He has been described as "a genius who almost single-handedly created the foundations for modern statistical science" and "the single most important figure in 20th century statistics". Fisher also did experimental agricultural research, which has saved millions from starvation. 
+Ronald Fisher introduced the Iris Data Set but it was Edgar Anderson who actually collected the data. [2]
 
 ### Instructions
 
@@ -65,7 +68,7 @@ Matplotlib is a Python 2D plotting library which produces publication quality fi
 
 ### What is Seaborn?
 
-Seaborn is a Python visualization library based on matplotlib. It provides a high-level interface for drawing attractive statistical graphics.[5]
+Seaborn is a Python visualization library based on matplotlib. It provides a high-level interface for drawing attractive statistical graphics.[6]
 
 # 2. ANALYSIS
 
@@ -250,17 +253,18 @@ We can see from **Table 3** that the average length and width of a sepal is 5.8 
 
 We can clearly see from **Diagram 1** that petal length and width are the smallest from 0-50 and increase in size again from 50-100 and again from 100-150. As we already know from our data that rows 0-50 represent Iris Setosa, 50-100 - Iris Versicolor and 100-150 Iris Virginica, so it is undeniable that Iris Setosa have the smallest petals and Iris Virginica have the largest. 
 
-**Diagram 2** shows a very distinctive size difference in each species with Iris Virginica proving to be the largest.
+Again in **Diagram 2** shows a very distinctive size difference in each species with Iris Virginica proving to be the largest.
 
 **Diagram 4** provides us with a clear visualization of each species variables. The biggest difference can be seen between Iris Setosa and Iris Virginica, and Iris Versicolor falls somewhere in the middle.
 
-Over all, visualisating the data using Matplotlib gave me a great insight of how data can be represented. It clearly demonstrated the different patterns and relationships between the variables. It gives data a totally different dynamic. After further research into the different libraries available for data representation I did find seaborn to be useful too. 
+Over all, visualisating the data using **Matplotlib** gave me a great insight of how data can be represented. It clearly demonstrated the different patterns and relationships between the variables. It gives data a totally different dynamic. After further research into the different libraries available for **data representation** I did find seaborn to be useful too. 
 
 --------------------------------------------------------------------------------
 ### REFERENCES:
-1. https://www.techopedia.com/definition/32880/iris-flower-data-set
+1.http://patrickhoey.com/downloads/Computer_Science/03_Patrick_Hoey_Data_Visualization_Dataset_paper.pdf
 2. https://en.wikipedia.org/wiki/Ronald_Fisher
-3. https://pandas.pydata.org/ 
-4. https://matplotlib.org/
-5. https://seaborn.pydata.org/
-6. https://archive.ics.uci.edu/ml/datasets/Iris
+3. http://www.numpy.org/
+4. https://pandas.pydata.org/ 
+5. https://matplotlib.org/
+6. https://seaborn.pydata.org/
+7. https://archive.ics.uci.edu/ml/datasets/Iris
